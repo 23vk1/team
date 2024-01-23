@@ -14,25 +14,27 @@ void reverse_str();			// function to make reverse of string
 
 
 int main(){
-	int selection;	
+	int selection,b;	
 	
 	repeat:		// declare (repeat:) to use goto function
-	cout<<"\n input string";		// take string from user
+	// cout<<"\n input string";		// take string from user
 	
-	// """ IMP """" * menu jate banavje topa * """" IMP """"
+
 	
 	// first make manu for all function and show it on display so user can selecct which function he/she wants to use(like he/she wants to copy string)
-	switch(selection){	
-		case 1:reverse_str();
-		case 2:concatenation();
-		case 3:palindrome();
-		case 4:copy_str();
-		case 5:str_length();
-		case 6:char_freq_in_str();
-		case 7:vowel_cons();
-		case 8:space_and_digit();
+	// switch(selection){	
+	// 	case 1:reverse_str();
+	// 	case 2:concatenation();
+	// 	case 3:palindrome();
+	// 	case 4:copy_str();
+	// 	case 5:str_length();
+	// 	case 6:char_freq_in_str();
+	// 	case 7:vowel_cons();
+	// 	case 8:space_and_digit();
 			
-	}	
+	// }	
+
+	reverse_str();
 	
 	cout<<"\n press 1 to continue";cin>>b;
 	if(b==1){
@@ -42,7 +44,26 @@ int main(){
 }
 
 void reverse_str(){			// function to make reverse of string
+	char a[20],b[20];
+	int i,j,c=0;
 	
+	cout<<"\n Enter string :";
+	cin>>a;
+	
+	for(i=0;a[i]!='\0';i++){
+		c++;
+	}
+	c=c-1;
+	for(i=0;i<=a[i]!='\0';i++){
+		b[i]=a[c];
+		c--;
+	}
+	cout<<"\n reverse of the string is "<<b;
+	// for(i=0;b[i]!='\0';i++){
+	// 	cout<<b[i];
+	// }
+
+
 }
 void concatenation(){		// function to concatenate string
 	
